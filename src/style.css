@@ -1,0 +1,201 @@
+html, body {
+    height: 100%;  
+    margin: 0;     
+    padding: 0;  
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+  }
+  
+  /* Header: Fixed at the top */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: whitesmoke;
+    color: black;
+    position: fixed;
+    top: 0;
+    left: 1;
+    width: 100%;
+
+  }
+
+/* Ensure header has the right layout */
+header .logo-container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    font-weight: lighter;
+    height: 100px;       
+  }
+  
+  /* Styling for the logo image */
+  header .logo-container .logo {
+    width: 150px;      
+    height: auto;           
+    max-width: 100%;         
+  }
+  
+  
+  /* Navbar styles */
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    
+  }
+  
+  /* Header buttons (Sign In and Call) */
+  .header-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .sign-in-btn,
+  .call-btn {
+    padding: 10px 20px;
+    color: black;
+    border: 2px solid blue;   /* Blue border */
+  border-radius: 5px;
+    color: blue;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: blue;
+    /* transition: background-color 0.3s ease; */
+  }
+  
+ 
+  
+  
+  
+/* Hero Section: Split into two sides */
+.hero {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;     
+    padding: 0 20px;            
+    height: 80vh;              
+    background-color: white;   
+  }
+  
+  /* Left Side: Text content */
+  .hero .text-content {
+    flex: 1;                    
+    padding-right: 20px;          
+    background-color: white;    
+    text-align: left; 
+    font-weight: lighter;      
+    padding: 100px;                 
+    display: flex;                  
+    flex-direction: column;          
+    justify-content: center;         
+  }
+  
+  /* Image Styling */
+  .hero .text-content .center-image {
+    max-width: 80%;       
+    margin-bottom: 10px;    
+    display: block;                
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Heading and paragraph styling */
+  .hero .text-content h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero .text-content p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+
+.hero .text-content button {
+    padding: 8px 16px; 
+    font-size: 0.9rem;  
+    width: 150px;        
+    background-color: white;
+    color: black;
+    border: 2px solid blue;  
+  border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .hero .text-content button:hover {
+    background-color: white;
+  }
+  
+  
+
+  
+  /* Right Side: Image */
+  .hero .image-container {
+    flex: 1; 
+    margin-top: 100px;
+    align-items: center;
+    background-color: white; 
+  }
+  
+  .hero .image-container img {
+    width: 70%;   
+    height: auto;  
+    display: block;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+  }
+  
+  
+  .services {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    flex-grow: 1;
+    font-weight: 1px;
+  }
+  
+  .service-item {
+    text-align: center;
+    width: 30%;
+    border-style:  outset;
+    background-color: whitesmoke;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+
+
+  .buttton {
+    padding: 10px;
+    align-items: center;
+  }
+  
+  footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+  }
+  
